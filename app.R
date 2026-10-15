@@ -36,29 +36,33 @@ APP_FAMILY <- "Yuen"                         # used by reference managers
 APP_GIVEN <- "Jonathan Jun Xian"
 APP_INITIALS <- "JJX"
 APP_TITLE <- "AnyRoB: A highly customizable R Shiny web application for generating risk-of-bias traffic-light and summary plots for any assessment tool"
-APP_VERSION <- "1.0"
+APP_VERSION <- "1.0.0"
 APP_YEAR <- "2026"
 APP_URL <- "https://jonathanyuen.shinyapps.io/AnyRoB/"
+APP_DOI <- "10.5281/zenodo.23382813"   # Zenodo concept DOI: always resolves to the latest version
+doi_url <- function() paste0("https://doi.org/", APP_DOI)
 app_citation <- function() {
-  paste0(APP_AUTHOR, ". ", APP_TITLE, " [computer software]. Version ", APP_VERSION, ". ", APP_YEAR, ".",
-         if (nzchar(APP_URL)) paste0(" Available at: ", APP_URL) else "")
+  paste0(APP_AUTHOR, ". ", APP_TITLE, " [computer software]. Version ", APP_VERSION, ". Zenodo; ", APP_YEAR, ". ",
+         doi_url(), ". Available at: ", APP_URL)
 }
 citation_file <- function(fmt) {
   author <- paste0(APP_FAMILY, ", ", APP_GIVEN)
   lines <- switch(fmt,
                   ris = c("TY  - COMP", paste0("AU  - ", author), paste0("TI  - ", APP_TITLE), paste0("PY  - ", APP_YEAR),
                           paste0("ET  - Version ", APP_VERSION), "M3  - Computer software (R Shiny web application)",
-                          if (nzchar(APP_URL)) paste0("UR  - ", APP_URL), "ER  - "),
+                          "PB  - Zenodo", paste0("DO  - ", APP_DOI), paste0("UR  - ", APP_URL), "ER  - "),
                   nbib = c(paste0("TI  - ", APP_TITLE), paste0("FAU - ", author), paste0("AU  - ", APP_FAMILY, " ", APP_INITIALS),
-                           paste0("DP  - ", APP_YEAR), "PT  - Software", "LA  - eng",
-                           paste0("SO  - ", APP_TITLE, " [computer software]. Version ", APP_VERSION, ". ", APP_YEAR, ".",
-                                  if (nzchar(APP_URL)) paste0(" Available at: ", APP_URL) else "")),
-                  bib = c(paste0("@misc{", tolower(APP_FAMILY), APP_YEAR, "anyrob,"),
+                           paste0("DP  - ", APP_YEAR), "PT  - Software", "LA  - eng", "PB  - Zenodo",
+                           paste0("LID - ", APP_DOI, " [doi]"), paste0("AID - ", APP_DOI, " [doi]"),
+                           paste0("SO  - ", app_citation())),   # .nbib has no URL field; the app link is in SO
+                  bib = c(paste0("@software{", tolower(APP_FAMILY), APP_YEAR, "anyrob,"),
                           paste0("  author = {", APP_FAMILY, ", ", APP_GIVEN, "},"),
                           paste0("  title = {{", APP_TITLE, "}},"),
                           paste0("  year = {", APP_YEAR, "},"),
-                          paste0("  note = {Computer software, version ", APP_VERSION, "},"),
-                          if (nzchar(APP_URL)) paste0("  howpublished = {\\url{", APP_URL, "}},"),
+                          paste0("  version = {", APP_VERSION, "},"),
+                          "  publisher = {Zenodo},",
+                          paste0("  doi = {", APP_DOI, "},"),
+                          paste0("  url = {", APP_URL, "}"),
                           "}"))
   paste0(paste(lines, collapse = "\r\n"), "\r\n")
 }

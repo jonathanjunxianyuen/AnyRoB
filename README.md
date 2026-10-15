@@ -1,5 +1,7 @@
 # AnyRoB
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23382813.svg)](https://doi.org/10.5281/zenodo.23382813)
+
 **Highly customizable traffic light and summary plots for any risk of bias tool.**
 
 AnyRoB is a free, point-and-click R Shiny web app for making risk of bias figures for systematic reviews and meta-analyses. Unlike tools built around one assessment tool, AnyRoB lets you define everything yourself: domains and subdomains, judgement names, colours and symbols, and every label on the figure. It works with any domain-based tool, whether a published one such as RoB 2, ROBINS-I or QUADAS-2, or your own. No coding is needed.
@@ -65,9 +67,9 @@ Click **Save progress** (top right, on any page) to download an Excel file. It c
 
 If AnyRoB was useful for your research, please cite it:
 
-> Yuen, J. J. X. (2026). *AnyRoB: A highly customizable R Shiny web application for generating risk-of-bias traffic-light and summary plots for any assessment tool* (Version 1.0.0) [Computer software]. Zenodo. https://doi.org/10.5281/zenodo.XXXXXXX
+> Yuen, J. J. X. (2026). *AnyRoB: A highly customizable R Shiny web application for generating risk-of-bias traffic-light and summary plots for any assessment tool* (Version 1.0.0) [Computer software]. Zenodo. https://doi.org/10.5281/zenodo.23382813
 
-<!-- TODO: replace the DOI after the first Zenodo release -->
+This DOI always points to the latest version. To cite the exact version you used, take its version DOI from the [Zenodo record](https://doi.org/10.5281/zenodo.23382813).
 
 You can also use **Cite this repository** on this GitHub page, or download the citation as .ris, .nbib or .bib from the app's home page.
 

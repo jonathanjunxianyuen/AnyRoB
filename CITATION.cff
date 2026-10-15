@@ -1,12 +1,11 @@
-# Put this file in the top folder of the AnyRoB GitHub repository.
-# Before your first release, check the line marked "TODO".
 cff-version: 1.2.0
 message: "If you use AnyRoB in your research, please cite it as below."
 type: software
 title: "AnyRoB: A highly customizable R Shiny web application for generating risk-of-bias traffic-light and summary plots for any assessment tool"
 version: 1.0.0
 date-released: 2026-10-15
-license: MIT                     # TODO: change if you chose a different licence for this repo
+doi: 10.5281/zenodo.23382813
+license: MIT
 repository-code: "https://github.com/jonathanjunxianyuen/AnyRoB"
 url: "https://jonathanyuen.shinyapps.io/AnyRoB/"
 abstract: >-
