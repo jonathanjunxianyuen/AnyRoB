@@ -6,7 +6,6 @@ AnyRoB is a free, point-and-click R Shiny web app for making risk of bias figure
 
 ### ▶ Open the app: **https://jonathanyuen.shinyapps.io/AnyRoB/**
 
-
 ![Example traffic light plot (A) and summary plot (B) made with AnyRoB, using fictional example studies](docs/example-figure.png)
 
 ---
@@ -66,7 +65,7 @@ Click **Save progress** (top right, on any page) to download an Excel file. It c
 
 If AnyRoB was useful for your research, please cite it:
 
-> Yuen, J. J. X. (2026). *AnyRoB: highly customizable R shiny webapp for creating risk of bias traffic light and summary plots for any tool* (Version 1.0.0) [Computer software]. Zenodo. https://doi.org/10.5281/zenodo.XXXXXXX
+> Yuen, J. J. X. (2026). *AnyRoB: A highly customizable R Shiny web application for generating risk-of-bias traffic-light and summary plots for any assessment tool* (Version 1.0.0) [Computer software]. Zenodo. https://doi.org/10.5281/zenodo.XXXXXXX
 
 <!-- TODO: replace the DOI after the first Zenodo release -->
 

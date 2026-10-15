@@ -1,0 +1,30 @@
+# Put this file in the top folder of the AnyRoB GitHub repository.
+# Before your first release, fill in the lines marked "TODO" and delete those that don't apply.
+cff-version: 1.2.0
+message: "If you use AnyRoB in your research, please cite it as below."
+type: software
+title: "AnyRoB: A highly customizable R Shiny web application for generating risk-of-bias traffic-light and summary plots for any assessment tool"
+version: 1.0.0
+date-released: 2026-10-15        # TODO: change to the day you publish the release
+license: MIT                     # TODO: change if you chose a different licence for this repo
+repository-code: "https://github.com/YOUR-USERNAME/AnyRoB"     # TODO
+url: "https://jonathanyuen.shinyapps.io/AnyRoB/"
+abstract: >-
+  AnyRoB is an R Shiny web application that generates highly customizable
+  risk of bias traffic light and summary plots for any domain-based risk of
+  bias assessment tool. Users define their own domains, subdomains and
+  judgements (names, colours and symbols), enter assessments in the app or in
+  Excel, and export publication-ready figures.
+keywords:
+  - risk of bias
+  - systematic review
+  - meta-analysis
+  - traffic light plot
+  - data visualization
+  - R
+  - Shiny
+authors:
+  - family-names: Yuen
+    given-names: Jonathan Jun Xian
+    orcid: "https://orcid.org/0000-0000-0000-0000"             # TODO: your ORCID, or delete this line
+    affiliation: "YOUR INSTITUTION"                             # TODO: or delete this line
