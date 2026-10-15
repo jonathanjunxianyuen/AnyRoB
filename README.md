@@ -4,8 +4,8 @@
 
 AnyRoB is a free, point-and-click R Shiny web app for making risk of bias figures for systematic reviews and meta-analyses. Unlike tools built around one assessment tool, AnyRoB lets you define everything yourself: domains and subdomains, judgement names, colours and symbols, and every label on the figure. It works with any domain-based tool, whether a published one such as RoB 2, ROBINS-I or QUADAS-2, or your own. No coding is needed.
 
-### ▶ Open the app: **https://YOUR-ACCOUNT.shinyapps.io/AnyRoB/**
-<!-- TODO: replace with the live address -->
+### ▶ Open the app: **https://jonathanyuen.shinyapps.io/AnyRoB/**
+
 
 ![Example traffic light plot (A) and summary plot (B) made with AnyRoB, using fictional example studies](docs/example-figure.png)
 
